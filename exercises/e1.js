@@ -17,6 +17,12 @@
 
 // Your code goes here
 
+function logMessage() { 
+  return 'hello world!'
+ }
+
+console.log (logMessage)
+
 
 
 
@@ -32,7 +38,10 @@
 */
 
 // Your code goes here...
+function logMyMessage ('myMessage'){
 
+
+}
 
 
 
