@@ -17,14 +17,11 @@
 
 // Your code goes here
 
-function logMessage() { 
-  return 'hello world!'
- }
+function logMessage(){
+  console.log ('Hello, World!');
+}
 
-console.log (logMessage)
-
-
-
+logMessage
 
 /**
  * =============================================================
@@ -38,12 +35,12 @@ console.log (logMessage)
 */
 
 // Your code goes here...
-function logMyMessage ('myMessage'){
 
 
+function logMyMessage(message){
+  console.log(message);
 }
-
-
+logMyMessage("Its my message")
 
 /**
  * ===============================================================
@@ -56,8 +53,10 @@ function logMyMessage ('myMessage'){
 */
 
 // Your code goes here...
-
-
+function logMessageWithMyName(name){
+ console.log("My name is " + (name) + "!");
+}
+logMessageWithMyName("Bilbo")
 
 
 /**
@@ -74,6 +73,12 @@ function logMyMessage ('myMessage'){
 // Your code goes here...
 
 
+
+function logMyInfo(name, age) {
+console.log ("My name is " + (name) + ". " + "I am " + (age) + " years old!");
+}
+
+logMyInfo("Bilbo", 502);
 
 
 // === TEST YOURSELF ===
