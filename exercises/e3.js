@@ -16,8 +16,13 @@
 
 // Your code goes here...
 
-
-
+function doesArrayIncludeItemsBetweenVals(arr, val1, val2) {
+ if (arr > val1 && arr < val2) {
+ return (true);
+} else return (false);
+}
+console.log(doesArrayIncludeItemsBetweenVals([2, 4, 2], 3, 5))
+console.log(doesArrayIncludeItemsBetweenVals([2, 4, 2], 5, 10))
 
 /**
  * ====================================================
