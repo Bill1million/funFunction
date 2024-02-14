@@ -17,13 +17,13 @@
 // Your code goes here...
 
 function doesArrayIncludeItemsBetweenVals(arr, val1, val2) {
- if (arr > val1 && arr < val2) {
- return (true);
-} else return (false);
+  for (const num of arr) {
+      if (num > val1 && num < val2) {
+          return true; 
+      }
+  }
+  return false;
 }
-console.log(doesArrayIncludeItemsBetweenVals([2, 4, 2], 3, 5))
-console.log(doesArrayIncludeItemsBetweenVals([2, 4, 2], 5, 10))
-
 /**
  * ====================================================
  * Please read the /exercises-info/e4.md file. It describes different types of syntax to write functions
@@ -41,7 +41,21 @@ console.log(doesArrayIncludeItemsBetweenVals([2, 4, 2], 5, 10))
 
 // Your code goes here...
 
+function getValueWithConditionOne(num1, num2) {
+  if (num1 === 40 && num2 === 40) {
+      return num1 + num2;
+  } else {
+      return 2 * (num1 + num2);
+  }
+}
 
+const getValueWithConditionTwo = (num1, num2) => {
+  return (num1 === 40 && num2 === 40) ? num1 + num2 : 2 * (num1 + num2);
+};
+
+const getValueWithConditionThree = function(num1, num2) {
+  return (num1 === 40 && num2 === 40) ? num1 + num2 : 2 * (num1 + num2);
+};
 
 
 // === TEST YOURSELF ===
