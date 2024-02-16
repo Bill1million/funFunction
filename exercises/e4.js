@@ -9,8 +9,10 @@
  * splitFirstAndLastNames('John Smith') => ['John', 'Smith']
  */
 
-function splitFirstAndLastNames(str) {
-  return str.split(' ');
+const str = "John Smith"
+
+const splitFirstAndLastNames = (str) => {
+    return str.split(' ');
 }
 
 
@@ -20,10 +22,14 @@ function splitFirstAndLastNames(str) {
  * personAge({ id: 1, name: 'Someone', age: 32}) => 32
  */
 
-const personAge = function(personObject) {
+
+
+const personAge = (personObject) => {
   return personObject.age;
 }
-
+const someone = { id: 1, name: 'Someone', age: 32 };
+const age = personAge(someone);
+console.log(age)
 
 /** =========================
  * The isNameInArray function takes an array and string of name as the arguments.
@@ -32,9 +38,10 @@ const personAge = function(personObject) {
  * isNameInArray(['Jon', 'Michael', 'Andrey'], 'James') => false;
  */
 
-const isNameInArray = function(arr, name) {
-  return arr.includes(name);
-}
+const isNameInArray = (array, name) => {
+  return array.includes(name);
+};
+
 
 
 /** =========================
@@ -44,9 +51,9 @@ const isNameInArray = function(arr, name) {
  * !!! Hint: There are two functions to refactor !!!
  */
 
-const logSecondsUpToMax = function(max) {
+const logSecondsUpToMax = (max) => {
   let i = 0;
-  const timer = setInterval(function() {
+  const timer = setInterval(() => {
     if (i < max) {
       console.log(++i);
     } else {
